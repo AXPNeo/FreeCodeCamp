@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FCC: Landing Page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header id="header">
+            <img id="header-img" src="header-img.jpg">
+            <nav id="nav-bar">
+                <a href="#description" class="nav-link">Description</a>
+                <a href="#video" class="nav-link">Demo</a>
+                <a href="#form" class="nav-link">Sign Up</a>
+            </nav>
+        </header>
+        <main>
+            <div id="description">
+                <h1>Greatest Thing Ever Made</h1>
+                <p>This will make you 100x better at everything you try to do.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <video id="video" width="800" height="450" controls>
+                <source src="demo.mp4" type="video/mp4">
+                Video Unavailable.
+            </video>
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+                <label id="email-label" for="email">Sign up to join us</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <input type="submit" id="submit">
+            </form>
+        </main>
+    </body>
+</html>
