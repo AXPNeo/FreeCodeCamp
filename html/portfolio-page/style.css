@@ -1,5 +1,6 @@
 body{
     background-color: #303030;
+    color: #f0f0f0;
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     width: 100%;
@@ -41,16 +42,82 @@ nav{
     background-color: #202020;
 }
 
+.project-tile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #d0d0d0;
+}
+
+.project-tile:hover{
+    background-color: #505050;
+}
+
+.contact-link{
+    padding: 5px;
+    text-decoration: none;
+    color: #d0d0d0;
+}
+
+.contact-link:hover{
+    background-color: #505050;
+}
+
+#projects{
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#project-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact{
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #welcome-section{
+    background-color: #5250a1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #f0f0f0;
+    width: 100%;
 }
 
-@media(min-width: 600px){
+#welcome-section h1{
+    font-size: 60px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+}
+
+#welcome-section h2{
+    font-size: 35px;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media(min-width: 850px){
     body{
         padding: 50px 0px;
     }
@@ -60,4 +127,22 @@ nav{
         height: 50px;
     }
 
+    #projects h2{
+        align-self: flex-start;
+    }
+    
+    #contact h2{
+        align-self: flex-start;
+    }
+
+    #project-links{
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+    #contact-links{
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
 }
