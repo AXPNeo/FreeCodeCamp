@@ -1,3 +1,12 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #202020;
+    color: #f0f0f0;
+}
+
 header{
     display: flex;
     flex-direction: row;
@@ -12,6 +21,13 @@ main{
     margin: 20px auto 0px auto;
 }
 
+h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+p{
+    font-size: 18px;
+}
 nav{
     display: flex;
     flex-direction: column;
@@ -20,6 +36,17 @@ nav{
 
 .nav-link{
     margin: 0 5px;
+}
+
+#form{
+    margin: 20px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    font-size: 25px;
 }
 
 @media(min-width: 800px){
