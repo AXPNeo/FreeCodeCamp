@@ -35,7 +35,16 @@ nav{
 }
 
 .nav-link{
-    margin: 0 5px;
+    margin: 0 0px;
+    padding: 5px 10px;
+    color: #f0f0f0;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    background-color: #505050;
 }
 
 #form{
