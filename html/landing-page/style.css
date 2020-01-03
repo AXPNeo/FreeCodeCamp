@@ -11,6 +11,12 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #202020;
+    z-index: 9999;
 }
 
 main{
@@ -19,6 +25,12 @@ main{
     align-items: center;
     max-width: 750px;
     margin: 20px auto 0px auto;
+    padding-top:20px;
+    z-index: 0;
+}
+
+video{
+    z-index: 0;
 }
 
 h1{
