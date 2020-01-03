@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FCC: Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="title-block">
+                <h1 id="title">freeCodeCamp Survey</h1>
+                <p id="description">Thank you for taking the time to help up improve the platform</p>
+            </div>
+            <form id="survey-form">
+                <div class="survey-question">
+                    <label id="name-label" for="name">Name</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="survey-question">
+                    <label id="email-label" for="email">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="survey-question">
+                    <label id="number-label" for="number">Age <span class="tip">(optional)</span></label><br>
+                    <input type="number" id="number" name="age" placeholder="Age" min="13" max="100">
+                </div>
+                <div class="survey-question">
+                    <label id="dropdown-label" for="dropdown">Which option best describes your current role?</label><br>
+                    <select id="dropdown">
+                        <option disabled selected>Select current role</option>
+                        <option>Student</option>
+                        <option>Full-Time Job</option>
+                        <option>Full-Time Learner</option>
+                        <option>Prefer not to say</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="survey-question">
+                    <label id="radio-label">Would you recommend freeCodeCamp to a friend?</label><br>
+                    <input type="radio" name="radio-input" value="definitely">Definitely<br>
+                    <input type="radio" name="radio-input" value="maybe">Maybe<br>
+                    <input type="radio" name="radio-input" value="not-sure">Not Sure<br>
+                </div>
+                <div class="survey-question">
+                    <label id="checkbox-label">What would you like to see improved? <span class="tip">(Check all that apply)</span></label><br>
+                    <input type="checkbox" name="checkbox-input" value="front-end-projects">Front-end Projects<br>
+                    <input type="checkbox" name="checkbox-input" value="back-end-projects">Back-end Projects<br>
+                    <input type="checkbox" name="checkbox-input" value="data-visualization">Data Visualization<br>
+                </div>
+                <div class="survey-question">
+                    <label id="text-area-lable" for="text-area">Any comments or suggestions?</label><br>
+                    <textarea id="text-area" placeholder="Enter comments..."></textarea>
+                </div>
+                <div class="survey-question">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
